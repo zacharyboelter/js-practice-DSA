@@ -92,14 +92,20 @@
 // For example, for [1, 2, 2] it should return 9 because 1^2 + 2^2 + 2^2 = 9.
 
 
-function squareSum(numbers) {
-    let sum = 0
-    for( let i = 0; i < numbers.length; i++) {
-        sum += numbers[i] **2
-    }
-    console.log(sum)
-    return sum
-}
+// function squareSum(numbers) {
+//     let sum = 0
+//     for( let i = 0; i < numbers.length; i++) {
+//         sum += numbers[i] **2
+//     }
+//     console.log(sum)
+//     return sum
+// }
+
+// function squareSum(numbers){
+//     return numbers.reduce(function(sum, n){
+//       return (n*n) + sum;
+//     }, 0)
+//   }
 
 
-(squareSum([4, 5, 30, 10]))
+// (squareSum([4, 5, 30, 10]))
