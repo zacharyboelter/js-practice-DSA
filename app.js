@@ -133,12 +133,23 @@
 
 // Given a non-negative integer, 3 for example, return a string with a murmur: "1 sheep...2 sheep...3 sheep...". Input will always be valid, i.e. no negative integers.
 
-function countSheep(num) {
-    let str = ''
-    for (let i = 1; i <= num; i++){
-        str += `${i} sheep...`
-    }
-    return str
+// function countSheep(num) {
+//     let str = ''
+//     for (let i = 1; i <= num; i++){
+//         str += `${i} sheep...`
+//     }
+//     return str
+// }
+
+// console.log(countSheep(10))
+
+
+// Write function RemoveExclamationMarks which removes all exclamation marks from a given string.
+
+function replaceAllExclamations(str){
+    let newStr = str.replace(/!/g, '') //this is a regExp way of removing the ! and the G makes it global
+    console.log(newStr)
+    return newStr
 }
 
-console.log(countSheep(10))
+replaceAllExclamations('Hello! World! How! Are You!?')
