@@ -146,10 +146,18 @@
 
 // Write function RemoveExclamationMarks which removes all exclamation marks from a given string.
 
-function replaceAllExclamations(str){
-    let newStr = str.replace(/!/g, '') //this is a regExp way of removing the ! and the G makes it global
-    console.log(newStr)
-    return newStr
-}
+// function replaceAllExclamations(str){
+//     let newStr = str.replace(/!/g, '') //this is a regExp way of removing the ! and the G makes it global
+//     console.log(newStr)
+//     return newStr
+// }
 
-replaceAllExclamations('Hello! World! How! Are You!?')
+let replaceExclamations = (s) => s.replace(/!/g, '')
+let removeExclamationMarks = (s) => s.replace(/!/g,'');
+
+removeExclamationMarks = s => s.replace(/\!/g, '');
+
+removeExclamationMarks('!!!!!! Shit')
+replaceExclamations('!!!!!! Shit')
+// replaceAllExclamations('Hello! World! How! Are You!?')
+
