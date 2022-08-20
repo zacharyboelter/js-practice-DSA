@@ -166,7 +166,7 @@
 // Write a function to split a string and convert it into an array of words.
 
 function stringToArray(str){
-    let newArr = str.split(' ')
+    let newArr = str.split(' ')  //simple enough. just use split at any ' ' (space) and it creates an array
     console.log(newArr)
 }
 
