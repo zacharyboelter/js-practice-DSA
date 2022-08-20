@@ -152,12 +152,22 @@
 //     return newStr
 // }
 
-let replaceExclamations = (s) => s.replace(/!/g, '')
-let removeExclamationMarks = (s) => s.replace(/!/g,'');
+// let replaceExclamations = (s) => s.replace(/!/g, '')
+// let removeExclamationMarks = (s) => s.replace(/!/g,'');
 
-removeExclamationMarks = s => s.replace(/\!/g, '');
+// removeExclamationMarks = s => s.replace(/\!/g, '');
 
-removeExclamationMarks('!!!!!! Shit')
-replaceExclamations('!!!!!! Shit')
-// replaceAllExclamations('Hello! World! How! Are You!?')
+// removeExclamationMarks('!!!!!! Shit')
+// replaceExclamations('!!!!!! Shit')
+// // replaceAllExclamations('Hello! World! How! Are You!?')
 
+
+
+// Write a function to split a string and convert it into an array of words.
+
+function stringToArray(str){
+    let newArr = str.split(' ')
+    console.log(newArr)
+}
+
+stringToArray('Today i am going to really fucking hope that the stupid padres win a game for once.')
