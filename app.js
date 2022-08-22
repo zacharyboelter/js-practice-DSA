@@ -165,9 +165,19 @@
 
 // Write a function to split a string and convert it into an array of words.
 
-function stringToArray(str){
-    let newArr = str.split(' ')  //simple enough. just use split at any ' ' (space) and it creates an array
-    console.log(newArr)
-}
+// function stringToArray(str){
+//     let newArr = str.split(' ')  //simple enough. just use split at any ' ' (space) and it creates an array
+//     console.log(newArr)
+// }
 
-stringToArray('Today i am going to really fucking hope that the stupid padres win a game for once.')
+// stringToArray('Today i am going to really fucking hope that the stupid padres win a game for once.')
+
+//  In this simple assignment you are given a number and have to make it negative. But maybe the number is already negative?
+
+function makeNegative(num){
+    if (num < 0) {
+        return num
+    } else {
+        return num * -1
+    }
+}
