@@ -39,7 +39,7 @@
 
 
 
-//Write a function that accepts an integer n and a string s as parameters, and returns a string of s repeated exactly n times.
+//~~~~~~~~~~~~~~~~~~~Write a function that accepts an integer n and a string s as parameters, and returns a string of s repeated exactly n times.~~~~~~~~~~~~~~
 
 
 // function repeatStr(n, s) {
@@ -86,7 +86,7 @@
 // }
 
 
-// Square(n) Sum
+// ~~~~~~~~~~~~~~~~~~Square(n) Sum~~~~~~~~~~~~~~~~~~~~~~~
 //Complete the square sum function so that it squares each number passed into it and then sums the results together.
 
 // For example, for [1, 2, 2] it should return 9 because 1^2 + 2^2 + 2^2 = 9.
@@ -113,7 +113,7 @@
 
 
 
-// Create a function that gives a personalized greeting. This function takes two parameters: name and owner.
+// ~~~~~~~~~~~~Create a function that gives a personalized greeting. This function takes two parameters: name and owner.~~~~~~~~~~~
 
 // Use conditionals to return the proper message:
 
@@ -131,7 +131,7 @@
 
 
 
-// Given a non-negative integer, 3 for example, return a string with a murmur: "1 sheep...2 sheep...3 sheep...". Input will always be valid, i.e. no negative integers.
+// ~~~~~~~~~~~~~~~Given a non-negative integer, 3 for example, return a string with a murmur: "1 sheep...2 sheep...3 sheep...". Input will always be valid, i.e. no negative integers.~~~~~~~~~~~
 
 // function countSheep(num) {
 //     let str = ''
@@ -144,7 +144,7 @@
 // console.log(countSheep(10))
 
 
-// Write function RemoveExclamationMarks which removes all exclamation marks from a given string.
+// ~~~~~~~~~~~~~~~~~~~Write function RemoveExclamationMarks which removes all exclamation marks from a given string.~~~~~~~~~~~~~~~~~~~
 
 // function replaceAllExclamations(str){
 //     let newStr = str.replace(/!/g, '') //this is a regExp way of removing the ! and the G makes it global
@@ -163,7 +163,7 @@
 
 
 
-// Write a function to split a string and convert it into an array of words.
+// ~~~~~~~~~~~~~~~Write a function to split a string and convert it into an array of words.~~~~~~~~~~~~~~~~~~
 
 // function stringToArray(str){
 //     let newArr = str.split(' ')  //simple enough. just use split at any ' ' (space) and it creates an array
@@ -182,7 +182,7 @@
 //     }
 // }
 
-//Remove first and last characters
+// ~~~~~~~~~~~~Remove first and last characters~~~~~~~~~~~~~~~~
 
 // function removeChar(str){
 //     return str.slice(1, -1)
@@ -190,6 +190,8 @@
 
 // removeCharacter = str => str.slice(1, -1)
 
+
+// ~~~~~~~~~~~~~ Double each element in array ~~~~~~~~~~~~~~~~
 
 // function maps(x){
 //     let newArr = []
@@ -205,17 +207,32 @@
 
 // console.log(maps([23, 34, 45, 56, 67]))
 
-//invert values
+//~~~~~~~~~~invert values~~~~~~~~~~~~~
 
 
-function reverse(array){                        //for loop that pushes reverse nums to new array
-    let newArr = []
-    for (i = 0; i < array.length; i++){
-        newArr.push(array[i] * -1)
-    }
-    return newArr
-  }
+// function reverse(array){                                //for loop that pushes reverse nums to new array
+//     let newArr = []
+//     for (i = 0; i < array.length; i++){
+//         newArr.push(array[i] * -1)
+//     }
+//     return newArr
+//   }
 
-const invert = array => array.map(num => -num);  // arrow function that maps over and creates new array of inverted nums
+// const invert = array => array.map(num => -num);         // arrow function that maps over and creates new array of inverted nums
 
-  console.log(invert([1,2,3,4,5, -132]))
+
+// function invert(array) {
+//     return array.map( x => x === 0 ? x : -x);           // map over using ternary 
+//  }
+
+//   console.log(invert([1,2,3,4,5, -132]))
+
+
+// ~~~~~~~~~~~~~~~~~~~~Reversed Strings~~~~~~~~~~~~~~~~~~~~~~~~~
+//Complete the solution so that it reverses the string passed into it. 
+
+function reverseString(str){
+    return str.split('').reverse().join('')
+}
+
+console.log(reverseString('livingston'))
