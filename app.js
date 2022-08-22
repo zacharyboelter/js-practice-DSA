@@ -191,23 +191,31 @@
 // removeCharacter = str => str.slice(1, -1)
 
 
-function maps(x){
+// function maps(x){
+//     let newArr = []
+//     for (let i = 0; i < x.length; i++){
+//         newArr.push(x[i] * 2)
+//     }
+//     return newArr
+// }
 
+// function maps(x){
+//     return x.map((n) => n * 2)
+// }
+
+// console.log(maps([23, 34, 45, 56, 67]))
+
+//invert values
+
+
+function reverse(array){                        //for loop that pushes reverse nums to new array
     let newArr = []
-
-    for (let i = 0; i < x.length; i++){
-        newArr.push(x[i] * 2)
+    for (i = 0; i < array.length; i++){
+        newArr.push(array[i] * -1)
     }
-
     return newArr
+  }
 
-}
+const invert = array => array.map(num => -num);  // arrow function that maps over and creates new array of inverted nums
 
-
-
-
-function maps(x){
-    return x.map((n) => n * 2)
-}
-
-console.log(maps([23, 34, 45, 56, 67]))
+  console.log(invert([1,2,3,4,5, -132]))
