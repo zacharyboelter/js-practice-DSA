@@ -184,8 +184,30 @@
 
 //Remove first and last characters
 
-function removeChar(str){
-    return str.slice(1, -1)
+// function removeChar(str){
+//     return str.slice(1, -1)
+// }
+
+// removeCharacter = str => str.slice(1, -1)
+
+
+function maps(x){
+
+    let newArr = []
+
+    for (let i = 0; i < x.length; i++){
+        newArr.push(x[i] * 2)
+    }
+
+    return newArr
+
 }
 
-removeCharacter = str => str.slice(1, -1)
+
+
+
+function maps(x){
+    return x.map((n) => n * 2)
+}
+
+console.log(maps([23, 34, 45, 56, 67]))
