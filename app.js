@@ -231,8 +231,19 @@
 // ~~~~~~~~~~~~~~~~~~~~Reversed Strings~~~~~~~~~~~~~~~~~~~~~~~~~
 //Complete the solution so that it reverses the string passed into it. 
 
-function reverseString(str){
-    return str.split('').reverse().join('')
+// function reverseString(str){
+//     return str.split('').reverse().join('')
+// }
+
+// console.log(reverseString('livingston'))
+
+
+
+//~~~~~~~~~~~~~~  MakeUpperCase  ~~~~~~~~~~~~~~~~~~
+//Write a function which converts the input string to uppercase.
+
+function capitalize(str) {
+    return str.toUpperCase()
 }
 
-console.log(reverseString('livingston'))
+const upperCase = (str) => str.toUpperCase()
