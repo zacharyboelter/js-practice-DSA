@@ -242,8 +242,27 @@
 //~~~~~~~~~~~~~~  MakeUpperCase  ~~~~~~~~~~~~~~~~~~
 //Write a function which converts the input string to uppercase.
 
-function capitalize(str) {
-    return str.toUpperCase()
+// function capitalize(str) {
+//     return str.toUpperCase()
+// }
+
+// const upperCase = (str) => str.toUpperCase()
+
+
+// ~~~~~~~~~~~~~ SquareEveryDigit ~~~~~~~~~~~~~~~~~
+// Welcome. In this kata, you are asked to square every digit of a number and concatenate them.
+
+// For example, if we run 9119 through the function, 811181 will come out, because 92 is 81 and 12 is 1.
+
+// Note: The function accepts an integer and returns an integer
+
+function squareDigits(num) {
+    return Number(('' + num).split('').map(function (val) { return val * val}).join('')) // turn num to string, split each char, map over and square, join back together
 }
 
-const upperCase = (str) => str.toUpperCase()
+console.log(squareDigits(2))
+console.log(squareDigits(2442))
+console.log(squareDigits(12))
+console.log(squareDigits(343))
+console.log(squareDigits(555))
+console.log(squareDigits(5))
