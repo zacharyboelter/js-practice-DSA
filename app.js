@@ -270,4 +270,11 @@ console.log(squareDigits(5))
 
 
 
-https://github.com/zacharyboelter/eth_dApp_ether.js.git
+//~~~~~~~~~~~~~~~Boolean to String~~~~~~~~~~~~~~~~~~
+//write a function that converts a boolean to a string
+
+function booToStr(b){
+    return b.toString()
+}
+
+console.log(booToStr(true))
