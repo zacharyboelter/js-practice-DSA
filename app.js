@@ -285,8 +285,13 @@ console.log(squareDigits(5))
 
 
 function highAndLow(numbers){
-    const arr = numbers.split(' ').map(Number)            //split string to new array. Map(Number) convert anything to an int in new array
+    const arr = numbers.split(' ')                        //split string to new array. 
     return `${Math.max(...arr)} ${Math.min(...arr)}`      // return the max of new array, and min of new array via spread opp
 }
+
+// function highAndLow(numbers){   
+//     numbers = numbers.split(' ').map(Number);                                   // .map(Number) converts all things to int 
+//     return Math.max.apply(0, numbers) + ' ' + Math.min.apply(0, numbers);
+//   }
 
 console.log(highAndLow('1 2 5 8 15 77 -91 50 78'))
