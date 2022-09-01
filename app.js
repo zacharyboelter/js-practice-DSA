@@ -273,8 +273,20 @@ console.log(squareDigits(5))
 //~~~~~~~~~~~~~~~Boolean to String~~~~~~~~~~~~~~~~~~
 //write a function that converts a boolean to a string
 
-function booToStr(b){
-    return b.toString()
+// function booToStr(b){
+//     return b.toString()
+// }
+
+// console.log(booToStr(true))
+
+
+// ~~~~~~~~~~~~~~~~ Highest and Lowest ~~~~~~~~~~~~~~~~~~
+// In this little assignment you are given a string of space separated numbers, and have to return the highest and lowest number.
+
+
+function highAndLow(numbers){
+    const arr = numbers.split(' ').map(Number)            //split string to new array. Map(Number) convert anything to an int in new array
+    return `${Math.max(...arr)} ${Math.min(...arr)}`      // return the max of new array, and min of new array via spread opp
 }
 
-console.log(booToStr(true))
+console.log(highAndLow('1 2 5 8 15 77 -91 50 78'))
