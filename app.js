@@ -18,7 +18,7 @@
 //     }
 //     console.log(sum)
 //     return sum                          // return the sum of all positive nums
-      
+
 //   }
 
 // function positiveSum(arr) {
@@ -257,7 +257,7 @@
 // Note: The function accepts an integer and returns an integer
 
 function squareDigits(num) {
-    return Number(('' + num).split('').map(function (val) { return val * val}).join('')) // turn num to string, split each char, map over and square, join back together
+    return Number(('' + num).split('').map(function (val) { return val * val }).join('')) // turn num to string, split each char, map over and square, join back together
 }
 
 console.log(squareDigits(2))
@@ -284,14 +284,29 @@ console.log(squareDigits(5))
 // In this little assignment you are given a string of space separated numbers, and have to return the highest and lowest number.
 
 
-function highAndLow(numbers){
-    const arr = numbers.split(' ')                        //split string to new array. 
-    return `${Math.max(...arr)} ${Math.min(...arr)}`      // return the max of new array, and min of new array via spread opp
-}
+// function highAndLow(numbers) {
+//     const arr = numbers.split(' ')                        //split string to new array. 
+//     return `${Math.max(...arr)} ${Math.min(...arr)}`      // return the max of new array, and min of new array via spread opp
+// }
 
 // function highAndLow(numbers){   
 //     numbers = numbers.split(' ').map(Number);                                   // .map(Number) converts all things to int 
 //     return Math.max.apply(0, numbers) + ' ' + Math.min.apply(0, numbers);
 //   }
 
-console.log(highAndLow('1 2 5 8 15 77 -91 50 78'))
+// console.log(highAndLow('1 2 5 8 15 77 -91 50 78'))
+
+
+// ~~~~~~~~~~~~~~~~~~ Beginner Series #1 School Paperwork ~~~~~~~~~~~~~~~~~~~~~~~
+//Your classmates asked you to copy some paperwork for them. You know that there are 'n' classmates and the paperwork has 'm' pages.
+
+// Your task is to calculate how many blank pages do you need. If n < 0 or m < 0 return 0.
+
+function paperWork(n, m) {
+    if (n < 0 || m < 0)
+    {
+        return 0
+    } else {
+        return n * m
+    }
+}
