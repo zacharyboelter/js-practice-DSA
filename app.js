@@ -310,3 +310,8 @@ function paperWork(n, m) {
         return n * m
     }
 }
+
+console.log(paperWork(3, 5))
+console.log(paperWork(13, 15))
+console.log(paperWork(-3, 35))
+console.log(paperWork(4, 0))
