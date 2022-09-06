@@ -256,17 +256,17 @@
 
 // Note: The function accepts an integer and returns an integer
 
-function squareDigits(num) {
-    return Number(('' + num).split('').map(function (val) { return val * val }).join('')) // turn num to string, split each char, map over and square, join back together
-}
+// function squareDigits(num) {
+//     return Number(('' + num).split('').map(function (val) { return val * val }).join('')) // turn num to string, split each char, map over and square, join back together
+// }
 
-console.log(squareDigits(2))
-console.log(squareDigits(2442))
-console.log(squareDigits(12))
-console.log(squareDigits(343))
-console.log(squareDigits(555))
-console.log(squareDigits(545))
-console.log(squareDigits(5))
+// console.log(squareDigits(2))
+// console.log(squareDigits(2442))
+// console.log(squareDigits(12))
+// console.log(squareDigits(343))
+// console.log(squareDigits(555))
+// console.log(squareDigits(545))
+// console.log(squareDigits(5))
 
 
 
@@ -340,3 +340,11 @@ function countSheep(arrOfSheep){
     }
     return total
 }
+
+
+function sheeps(arrayOfSheep){
+    return arrayOfSheep.filter(Boolean).length
+}
+
+console.log(sheeps([true, true, true, false, true]))
+console.log(countSheep([true, true, true, false, true, true]))
