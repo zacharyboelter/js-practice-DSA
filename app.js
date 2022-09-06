@@ -302,16 +302,28 @@ console.log(squareDigits(5))
 
 // Your task is to calculate how many blank pages do you need. If n < 0 or m < 0 return 0.
 
-function paperWork(n, m) {
-    if (n < 0 || m < 0)
-    {
-        return 0
-    } else {
-        return n * m
-    }
-}
+// function paperWork(n, m) {
+//     if (n < 0 || m < 0)
+//     {
+//         return 0
+//     } else {
+//         return n * m
+//     }
+// }
 
-console.log(paperWork(3, 5))
-console.log(paperWork(13, 15))
-console.log(paperWork(-3, 35))
-console.log(paperWork(4, 0))
+// console.log(paperWork(3, 5))
+// console.log(paperWork(13, 15))
+// console.log(paperWork(-3, 35))
+// console.log(paperWork(4, 0))
+
+
+
+
+
+//  ~~~~~~~~~~~~~~~~~~~ Sentence Smash ~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Write a function that takes an array of words and smashes them together into a sentence and returns the sentence. You can ignore any need to sanitize words or add punctuation, but you should add spaces between each word. Be careful, there shouldn't be a space at the beginning or the end of the sentence!
+
+
+function smash(words){
+    return words.join(' ')
+}
