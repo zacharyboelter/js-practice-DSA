@@ -324,6 +324,19 @@ console.log(squareDigits(5))
 // Write a function that takes an array of words and smashes them together into a sentence and returns the sentence. You can ignore any need to sanitize words or add punctuation, but you should add spaces between each word. Be careful, there shouldn't be a space at the beginning or the end of the sentence!
 
 
-function smash(words){
-    return words.join(' ')
+// function smash(words){
+//     return words.join(' ')
+// }
+
+//  ~~~~~~~~~~~~~~~~~~~~~ Counting Sheep ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Consider an array/list of sheep where some sheep may be missing from their place. We need a function that counts the number of sheep present in the array (true means present).
+
+function countSheep(arrOfSheep){
+    total = 0
+    for (let i = 0; i < arrOfSheep.length; i++){
+        if (arrOfSheep[i] == true){
+            total += 1
+        }
+    }
+    return total
 }
