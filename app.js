@@ -387,23 +387,44 @@
 // For example, when the input is green, output should be yellow.
 
 
-const lightChange = (current) => {
-    let next = ''
-    if (current == 'green') {
-        next = 'yellow'
-    } else if (current == 'yellow') {
-        next = 'red'
-    } else if (current == 'red') {
-        next = 'green'
-    } else {
-        next = 'Error'
+// const lightChange = (current) => {
+//     let next = ''
+//     if (current == 'green') {
+//         next = 'yellow'
+//     } else if (current == 'yellow') {
+//         next = 'red'
+//     } else if (current == 'red') {
+//         next = 'green'
+//     } else {
+//         next = 'Error'
+//     }
+//     console.log(next)
+//     return next
+// }
+
+// lightChange('green')
+// lightChange('yellow')
+// lightChange('red')
+// lightChange('pink')
+// lightChange('')
+
+
+//Reversed Sequence 
+
+// Build a function that returns an array of integers from n to 1 where n>0.
+
+// Example : n=5 --> [5,4,3,2,1]
+
+
+const reverseSequence = n => {
+    let arr = []
+    for (let i = n; i > 0; i--){
+        arr.push(i)
     }
-    console.log(next)
-    return next
+    console.log(arr)
+    return arr
 }
 
-lightChange('green')
-lightChange('yellow')
-lightChange('red')
-lightChange('pink')
-lightChange('')
+reverseSequence(50)
+reverseSequence(-50)
+reverseSequence(14)
