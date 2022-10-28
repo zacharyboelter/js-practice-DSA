@@ -363,16 +363,47 @@
 // countBy(2,5) === [2,4,6,8,10]
 
 
-const countBy = (x, n) => {
-    const z =[]                             //set empty array
-    for (let i = 1; i <= n; i++){           //loop through n
-        z.push(i * x)                       //multiply the looped by x and push to empty array
+// const countBy = (x, n) => {
+//     const z =[]                             //set empty array
+//     for (let i = 1; i <= n; i++){           //loop through n
+//         z.push(i * x)                       //multiply the looped by x and push to empty array
+//     }
+//     console.log(z)
+//     return z                                //return new array
+// }
+
+// countBy(1, 10)
+// countBy(10, 100)
+// countBy(2, 34)
+// countBy(55, 11111)
+
+
+// Thinkful - Logic Drills: Traffic light
+
+// You're writing code to control your town's traffic lights. You need a function to handle each change from green, to yellow, to red, and then to green again.
+
+// Complete the function that takes a string as an argument representing the current state of the light and returns a string representing the state the light should change to.
+
+// For example, when the input is green, output should be yellow.
+
+
+const lightChange = (current) => {
+    let next = ''
+    if (current == 'green') {
+        next = 'yellow'
+    } else if (current == 'yellow') {
+        next = 'red'
+    } else if (current == 'red') {
+        next = 'green'
+    } else {
+        next = 'Error'
     }
-    console.log(z)
-    return z                                //return new array
+    console.log(next)
+    return next
 }
 
-countBy(1, 10)
-countBy(10, 100)
-countBy(2, 34)
-countBy(55, 11111)
+lightChange('green')
+lightChange('yellow')
+lightChange('red')
+lightChange('pink')
+lightChange('')
