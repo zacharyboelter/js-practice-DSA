@@ -435,12 +435,50 @@
 // The first century spans from the year 1 up to and including the year 100, the second century - from the year 101 up to and including the year 200, etc.
 // Given a year, return the century it is in.
 
-const whatCentury = year => {
-    let century = Math.ceil(year / 100)
-    return century
+// const whatCentury = year => {
+//     let century = Math.ceil(year / 100)
+//     return century
+// }
+// const century = year => Math.ceil(year / 100)
+
+// console.log(whatCentury(1999))
+// console.log(whatCentury(9))
+// console.log(whatCentury(11999))
+// console.log(whatCentury(2001))
+// console.log(century(2001))
+// console.log(century(2201))
+
+
+// Friend or foe
+
+// Make a program that filters a list of strings and returns a list with only your friends name in it.
+
+// If a name has exactly 4 letters in it, you can be sure that it has to be a friend of yours! Otherwise, you can be sure he's not...
+
+// Ex: Input = ["Ryan", "Kieran", "Jason", "Yous"], Output = ["Ryan", "Yous"]
+
+// const homie = friends => {
+//     return friends.filter(friend => friend.length > 4)
+// }
+
+// console.log(homie(['bradford', 'chad', 'brad', 'chadford', 'boob', 'boobwick']))
+
+
+//DIfference of volumes of cuboids
+
+// assume a and b are both arrays of 3. Find the difference between the volumes of the two cuboids.
+
+function findDifference(a, b) {
+    let arr1 = a[0]
+    let arr2 = b[0]
+    for (let i = 1; i < a.length; i++){
+        arr1 *= a[i]
+    }
+    for (let j = 1; j < b.length; j++){
+        arr2 *= b[j]
+    }
+    return Math.abs(arr1 - arr2)
 }
 
-console.log(whatCentury(1999))
-console.log(whatCentury(9))
-console.log(whatCentury(11999))
-console.log(whatCentury(2001))
+console.log((3 * 4 * 5) - (1 * 2 * 3))
+console.log(findDifference([3, 4, 5], [1, 2 , 3]))
