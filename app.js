@@ -416,15 +416,31 @@
 // Example : n=5 --> [5,4,3,2,1]
 
 
-const reverseSequence = n => {
-    let arr = []
-    for (let i = n; i > 0; i--){
-        arr.push(i)
-    }
-    console.log(arr)
-    return arr
+// const reverseSequence = n => {
+//     let arr = []
+//     for (let i = n; i > 0; i--){
+//         arr.push(i)
+//     }
+//     console.log(arr)
+//     return arr
+// }
+
+// reverseSequence(50)
+// reverseSequence(-50)
+// reverseSequence(14)
+
+
+// Century from Year
+
+// The first century spans from the year 1 up to and including the year 100, the second century - from the year 101 up to and including the year 200, etc.
+// Given a year, return the century it is in.
+
+const whatCentury = year => {
+    let century = Math.ceil(year / 100)
+    return century
 }
 
-reverseSequence(50)
-reverseSequence(-50)
-reverseSequence(14)
+console.log(whatCentury(1999))
+console.log(whatCentury(9))
+console.log(whatCentury(11999))
+console.log(whatCentury(2001))
