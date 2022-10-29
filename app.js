@@ -469,16 +469,21 @@
 // assume a and b are both arrays of 3. Find the difference between the volumes of the two cuboids.
 
 function findDifference(a, b) {
-    let arr1 = a[0]
-    let arr2 = b[0]
-    for (let i = 1; i < a.length; i++){
-        arr1 *= a[i]
-    }
-    for (let j = 1; j < b.length; j++){
-        arr2 *= b[j]
-    }
+    // let arr1 = a[0]
+    // let arr2 = b[0]
+    // for (let i = 1; i < a.length; i++){
+    //     arr1 *= a[i]
+    // }
+    // for (let j = 1; j < b.length; j++){
+    //     arr2 *= b[j]
+    // }
+    let arr1 = a.reduce((prev, curr) => prev * curr)
+    let arr2 = b.reduce((prev, curr) => prev * curr)
     return Math.abs(arr1 - arr2)
 }
 
-console.log((3 * 4 * 5) - (1 * 2 * 3))
-console.log(findDifference([3, 4, 5], [1, 2 , 3]))
+console.log((31 * 42 * 53) - (14 * 25 * 36))
+console.log(findDifference([31, 42, 53], [14, 25 , 36]))
+console.log(findDifference([31, 42, 53], [14, 25 , 36]))
+
+console.log(31 * 42 * 53)
