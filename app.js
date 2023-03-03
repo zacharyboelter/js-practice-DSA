@@ -498,18 +498,34 @@
 // The input string will only consist of lower case letters and/or spaces.
 
 
-function getCount(str){
-    vowelsCount = 0
-    vowels = ['a', 'e', 'i', 'o', 'u']
+// function getCount(str){
+//     vowelsCount = 0
+//     vowels = ['a', 'e', 'i', 'o', 'u']
 
-    for (let i = 0; i < str.length; i++) {
-       if (vowels.includes(str[i])){
-            vowelsCount++
-        }
+//     for (let i = 0; i < str.length; i++) {
+//        if (vowels.includes(str[i])){
+//             vowelsCount++
+//         }
+//     }
+//     return vowelsCount
+// }
+
+// console.log(getCount('zxcvbnmasdfghjklqwertyuiop'))
+// console.log(getCount('zxcvbnmtyuiop'))
+// console.log(getCount('zxcvbnmaaaaiaiiaiaiaiaiaoaosososoaosiaosioioiuioiuouiiouiuuoioioaisoaoiaeoiaeoieoaieaoietyuiop'))
+
+
+// Make a function that returns the value multiplied by 50 and increased by 6. If the value entered is a string it should return "Error".
+
+function multiplyAndIncrease(value) {
+    if (typeof value !== 'number') {
+        return 'Error'
     }
-    return vowelsCount
+    return (value * 50 + 6)
 }
 
-console.log(getCount('zxcvbnmasdfghjklqwertyuiop'))
-console.log(getCount('zxcvbnmtyuiop'))
-console.log(getCount('zxcvbnmaaaaiaiiaiaiaiaiaoaosososoaosiaosioioiuioiuouiiouiuuoioioaisoaoiaeoiaeoieoaieaoietyuiop'))
+console.log(multiplyAndIncrease(50))
+console.log(multiplyAndIncrease('people'))
+console.log(multiplyAndIncrease(0))
+console.log(multiplyAndIncrease(true))
+console.log(multiplyAndIncrease(3))
