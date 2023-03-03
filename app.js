@@ -468,22 +468,48 @@
 
 // assume a and b are both arrays of 3. Find the difference between the volumes of the two cuboids.
 
-function findDifference(a, b) {
-    // let arr1 = a[0]
-    // let arr2 = b[0]
-    // for (let i = 1; i < a.length; i++){
-    //     arr1 *= a[i]
-    // }
-    // for (let j = 1; j < b.length; j++){
-    //     arr2 *= b[j]
-    // }
-    let arr1 = a.reduce((prev, curr) => prev * curr)
-    let arr2 = b.reduce((prev, curr) => prev * curr)
-    return Math.abs(arr1 - arr2)
+// function findDifference(a, b) {
+//     // let arr1 = a[0]
+//     // let arr2 = b[0]
+//     // for (let i = 1; i < a.length; i++){
+//     //     arr1 *= a[i]
+//     // }
+//     // for (let j = 1; j < b.length; j++){
+//     //     arr2 *= b[j]
+//     // }
+//     let arr1 = a.reduce((prev, curr) => prev * curr)
+//     let arr2 = b.reduce((prev, curr) => prev * curr)
+//     return Math.abs(arr1 - arr2)
+// }
+
+// console.log((31 * 42 * 53) - (14 * 25 * 36))
+// console.log(findDifference([31, 42, 53], [14, 25 , 36]))
+// console.log(findDifference([31, 42, 53], [14, 25 , 36]))
+
+// console.log(31 * 42 * 53)
+
+
+
+// return number of vowels
+// Return the number (count) of vowels in the given string.
+
+// We will consider a, e, i, o, u as vowels for this Kata (but not y).
+
+// The input string will only consist of lower case letters and/or spaces.
+
+
+function getCount(str){
+    vowelsCount = 0
+    vowels = ['a', 'e', 'i', 'o', 'u']
+
+    for (let i = 0; i < str.length; i++) {
+       if (vowels.includes(str[i])){
+            vowelsCount++
+        }
+    }
+    return vowelsCount
 }
 
-console.log((31 * 42 * 53) - (14 * 25 * 36))
-console.log(findDifference([31, 42, 53], [14, 25 , 36]))
-console.log(findDifference([31, 42, 53], [14, 25 , 36]))
-
-console.log(31 * 42 * 53)
+console.log(getCount('zxcvbnmasdfghjklqwertyuiop'))
+console.log(getCount('zxcvbnmtyuiop'))
+console.log(getCount('zxcvbnmaaaaiaiiaiaiaiaiaoaosososoaosiaosioioiuioiuouiiouiuuoioioaisoaoiaeoiaeoieoaieaoietyuiop'))
